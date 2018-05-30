@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+   <form action = "{{ url_for('predict') }}" method = "POST">
+		  <h3>Enter Tweet</h3>
+      <input type = "text" name = "tweet"/>
+      <br>
+
+			<br><input type = "submit" value = "submit" /><br>
+		</form>
+  </body>
+</html>

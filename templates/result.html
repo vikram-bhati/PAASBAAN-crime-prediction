@@ -1,0 +1,101 @@
+<html class="no-js">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>PAASBAAN</title>
+	<meta name="viewport" content="">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+
+
+
+	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'> -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="/static/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="/static/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+	
+	<link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+
+	<link rel="stylesheet" href="/static/css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="/static/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<header>
+		<div class="container text-center">
+			<div class="fh5co-navbar-brand">
+				<a class="fh5co-logo" href="index.html">P A A S B A A N</a>
+			</div>
+			<nav id="fh5co-main-nav" role="navigation">
+				<ul>
+					<li><a href="index.html" class="active">Predict Crime</a></li>
+					<li><a href="work.html">Crime Analysis</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="owl-carousel owl-carousel1 owl-carousel-fullwidth fh5co-light-arrow animate-box" data-animate-effect="fadeIn">
+		<div class="item"><a href="images/Paasbaan.png" class="image-popup"><img src="images/Paasbaan.png" alt="image"></a></div>
+		<div class="item"><a href="images/crime density.jpg" class="image-popup"><img src="images/crime density.jpg" alt="image"></a></div>
+	</div>
+	<div align="center">
+	<form action = "{{ url_for('predict') }}" method = "POST">
+	<h1>{{ prediction }}</h1>
+	</form>
+	</div>
+	
+
+
+	<footer>
+		<div id="footer" class="fh5co-border-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<p>Copyright 2018 Paasbaan All Rights Reserved.</p>
+						<p class="fh5co-social-icons">
+							<a href="https://www.linkedin.com/in/sourabh-tiwari-08492a14a/"><i class="icon-linkedin-with-circle"></i></a>
+							<a href="#"><i class="icon-facebook-with-circle"></i></a>
+							<a href="#"><i class="icon-instagram-with-circle"></i></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
